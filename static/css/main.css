@@ -1,0 +1,36 @@
+html,
+body,
+header,
+#home {
+    height: 100%;
+    width: 100%;
+}
+
+#home {
+    background: url("https://media.giphy.com/media/nx9MB6OuqYzwQ/giphy.gif")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-webkit-background-size: cover;
+    -o-webkit-background-size: cover;
+    background-size: cover;
+}
+
+img{
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    border: 1px ridge rgb(250, 254, 255);  
+}
+
+#my-sign {
+    font-family: 'Dancing Script', cursive;
+}
+
+#name {
+    font-family: 'New Tegomin', serif;
+}
+
+#world{
+    width: 45%;
+    border-radius: 55%;
+    border: 1px ridge rgb(13, 233, 97);  
+}
