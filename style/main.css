@@ -14,7 +14,7 @@ header,
     background-size: cover;
 }
 
-img{
+#profile{
     width: 25%;
     height: 20%;
     border-radius: 50%;
@@ -33,4 +33,77 @@ img{
     width: 45%;
     border-radius: 55%;
     border: 1px ridge rgb(13, 233, 97);  
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 700px){
+    
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#0ad37f, #89f19a);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-left: 10px;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    #home {
+        background: url("https://media.giphy.com/media/nx9MB6OuqYzwQ/giphy.gif")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-webkit-background-size: cover;
+        -o-webkit-background-size: cover;
+        background-size: cover;
+    }
+
 }
