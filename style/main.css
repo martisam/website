@@ -1,0 +1,122 @@
+html,
+body,
+header,
+#home {
+    height: 100%;
+    width: 100%;
+}
+
+#home {
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.attomdata.com%2Fwp-content%2Fuploads%2F2018%2F04%2FAI_blog.jpg&f=1&nofb=1")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-webkit-background-size: cover;
+    -o-webkit-background-size: cover;
+    background-size: cover;
+}
+
+#profile{
+    width: 25%;
+    height: 20%;
+    border-radius: 50%;
+    border: 1px ridge rgb(250, 254, 255);  
+}
+
+#my-sign {
+    font-family: 'Dancing Script', cursive;
+}
+
+#name {
+    font-family: 'New Tegomin', serif;
+    text-align: center;
+
+}
+
+span {
+    transition: all 0.5s ease;
+}
+
+span.fade{
+
+    color: rgb(13, 233, 97);
+
+}
+
+#world{
+    width: 45%;
+    border-radius: 55%;
+    border: 1px ridge rgb(13, 233, 97);  
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 700px){
+    
+    nav ul{
+        width: 100%;
+        background: linear-gradient(#0ad37f, #89f19a);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-left: 10px;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    #home {
+        background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.attomdata.com%2Fwp-content%2Fuploads%2F2018%2F04%2FAI_blog.jpg&f=1&nofb=1")no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-webkit-background-size: cover;
+        -o-webkit-background-size: cover;
+        background-size: cover;
+    }
+
+}

@@ -1,0 +1,45 @@
+const text = document.querySelector("#name");
+const strText = text.textContent;
+const splitText = strText.split("");
+text.textContent = "";
+
+
+for (let i = 0; i < splitText.length; i++) {
+    text.innerHTML += "<span>" + splitText[i] + "</span>";
+}
+
+let char = 0;
+let timer = setInterval(onTick, 180);
+
+function onTick(){
+    const span = text.querySelectorAll("span")[char];
+    span.classList.add("fade");
+    char++;
+
+    if(char === splitText.length){
+        complete();
+        return;
+    }
+}
+
+function complete() {
+    clearInterval(timer);
+    timer = null;
+    
+}
+
+
+var menuList = document.getElementById("menuList");
+
+menuList.style.maxHeight = "0px";
+
+function togglemenu(){
+
+    if (menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "130px";
+    }
+
+    else {
+        menuList.style.maxHeight = "0px";
+          }
+}
